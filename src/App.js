@@ -1,6 +1,6 @@
 import React from 'react';
 import Elm from 'react-elm-components';
-import { Buttons } from './elm/Buttons';
+import Buttons from './elm/Buttons';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Elm src={Buttons.Elm.Main} />
         <a
           className="App-link"
           href="https://reactjs.org"
