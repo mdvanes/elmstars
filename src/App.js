@@ -1,4 +1,6 @@
 import React from 'react';
+import Elm from 'react-elm-components';
+import { Buttons } from './elm/Buttons';
 import logo from './logo.svg';
 import './App.css';
 
