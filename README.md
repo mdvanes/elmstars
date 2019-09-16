@@ -19,9 +19,11 @@ so the webpack.config.js changes are also different.
 
 # Todo
 
-* Convert to TS
-* Show 2D star map animation based on ![design](https://github.com/mdvanes/elmstars/raw/master/src/design.jpg "Design")
+* https://ellie-app.com/new
+* Show 2D star map animation based on ![design](https://github.com/mdvanes/elmstars/raw/master/src/design.jpg "Design") use https://github.com/joakin/elm-canvas
+* Publish the React component as NPM module
 * Integrate into bigger application
-* Publish
+* Make separate TypeScript implementation (converting to TS does not seem to work, because TSC can't compile the ./elm/Buttons import), see https://github.com/dillonkearns/elm-typescript-interop
+* Test Web Components instead of ports
 * Fix Medium posts by also converting to Elm
 * optional: API calls for star map
