@@ -82,6 +82,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^16.9.2",
     "elm-webpack-loader": "^6.0.0"
   },
   "jest": {
