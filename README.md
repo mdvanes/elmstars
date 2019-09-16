@@ -20,8 +20,8 @@ so the webpack.config.js changes are also different.
 # Todo
 
 * https://ellie-app.com/new
+* Publish the React component as NPM module (https://medium.com/@BrodaNoel/how-to-create-a-react-component-and-publish-it-in-npm-668ad7d363ce) and add Storybook
 * Show 2D star map animation based on ![design](https://github.com/mdvanes/elmstars/raw/master/src/design.jpg "Design") use https://github.com/joakin/elm-canvas
-* Publish the React component as NPM module
 * Integrate into bigger application
 * Make separate TypeScript implementation (converting to TS does not seem to work, because TSC can't compile the ./elm/Buttons import), see https://github.com/dillonkearns/elm-typescript-interop
 * Test Web Components instead of ports
