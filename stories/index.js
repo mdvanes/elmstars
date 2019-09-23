@@ -1,9 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import ElmStars from '../src/ElmStars';
 import Fancy from '../src/index';
 
-storiesOf('Button', module)
-  .add('with text', () => (
+storiesOf('elm-stars', module)
+  .add('default', () => (
+    <Fancy/>
+  ))
+  .add('test', () => (
     <Fancy/>
   ));
   // .add('with emoji', () => (

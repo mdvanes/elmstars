@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -18,7 +19,13 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      // loader for elm files
+      {
+        test: /\.elm$/,
+        exclude: [/elm-stuff/, /node_modules/],
+        loader: 'elm-webpack-loader'
+      },
     ]
   },
   externals: {
