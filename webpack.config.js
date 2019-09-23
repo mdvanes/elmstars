@@ -1,4 +1,5 @@
 const path = require('path');
+const elmloader = require('./webpack.elmloader.js');
 
 module.exports = {
   entry: './src/index.js',
@@ -16,16 +17,12 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
       // loader for elm files
-      {
-        test: /\.elm$/,
-        exclude: [/elm-stuff/, /node_modules/],
-        loader: 'elm-webpack-loader'
-      },
+      elmloader
     ]
   },
   externals: {
